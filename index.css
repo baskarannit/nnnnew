@@ -1,0 +1,120 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+.navBar {
+    background-color:red;
+    padding:20px;
+    width:100%;
+    display:flex;
+    font-size:30px;
+    justify-content:space-around;
+    align-items:space-around;
+    color:white;
+    position:fixed;
+    
+    
+}
+.subMenu {
+    display:flex;
+    justify-content: between;
+    align-items:center;
+    gap:30px;
+
+}
+.navBar h1 {
+    
+    font-size: 20px;
+     
+
+}
+.navBar a:hover {
+    color:blue;
+   
+}
+
+.top1 {
+    background-color:blueviolet;
+    padding:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 40px;
+}
+
+.top2 {
+    background-color:pink;
+    padding:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 40px;
+}
+
+.top3 {
+    background-color:yellow;
+    padding:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 40px;
+}
+
+.top4 {
+    background-color:green;
+    padding:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 40px;
+}
+
+input:checked ~ .subMenu {
+
+    /* background-color: yellow; */
+    left:0;
+    
+}
+/* .menuIcon {
+    display:none!important;
+    font-size:25px;
+    color:white;
+} */
+
+
+@media screen and (max-width:800px) {
+    .navBar .subMenu {
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        gap:30px;
+        font-size:25px;
+
+        text-decoration:none;
+    color:white;
+    padding:10px 15px;
+    border-radius:10px;
+    transition:all 0.5s;
+
+
+        position:fixed;
+        flex-direction:column;
+        justify-content:start;
+        padding-top:50px;
+        top:60px;
+        background-color: blue;
+        left:-100%;
+        width:100%;
+        height:92vh;
+        gap:0;
+
+    }
+}
+
+
